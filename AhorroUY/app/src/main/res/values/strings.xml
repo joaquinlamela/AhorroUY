@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">AhorroUY</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_cart">Mi carrito</string>
+    <string name="menu_favorites">Productos favoritos</string>
+    <string name="menu_orders">Mis compras</string>
+    <string name="menu_scanBarcode">Escanear código</string>
+    <string name="menu_logout">Cerrar sesión</string>
+    <string name="menu_signup">Registrarse</string>
+    <string name="menu_login">Iniciar sesión</string>
+    <string name="menu_coupons">Mis cupones</string>
+    <string name="nombre_y_apellido">Nombre y Apellido</string>
+    <string name="correo_username">Nomre de usuario</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="repetir_contrase_a">Repetir contraseña</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="password1">Contraseña</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="name">Nombre y Apellido</string>
+    <string name="password2">Repetir Contraseña</string>
+    <string name="register">Registrarse</string>
+    <string name="expira_en_xx_dias">Expira en xx dias</string>
+    <string name="xx">$XX</string>
+    <string name="ver_c_digo_qr">Ver código QR</string>
+    <string name="market_photo">Market photo</string>
+    <string name="expirado">EXPIRADO</string>
+    <string name="Plus">+</string>
+    <string name="Minus">-</string>
+    <string name="unidades">Unidades</string>
+    <string name="amount">1</string>
+    <string name="addToCart">Añadir al carrito</string>
+    <string name="product_image">Product Image</string>
+    <string name="product_name">Product name</string>
+    <string name="product_description">Product description</string>
+    <string name="product_price">Product price</string>
+    <string name="ordernar_por">Ordernar por:</string>
+    <string name="cat_name">Cat name</string>
+    <string name="percentageDiscount">-XX%</string>
+    <string name="discunt_image">Discunt Image</string>
+    <string name="price1">price1</string>
+    <string name="price2">price2</string>
+    <string name="market">market</string>
+    <string name="appName">AhorroUY</string>
+    <string name="appDescription">Consiga el mejor precio en los articulos de su canasta \n semanal incluyendo todos los supermercados</string>
+    <string name="discounts">Ofertas</string>
+    <string name="categories">Categorias</string>
+    <string name="products">Productos</string>
+    <string name="no_favorites">No tienes productos agregados a favoritos.</string>
+    <string name="no_coupons">No tienes cupones para usar.</string>
+    <string name="no_product_cart">No tienes productos agregados al carrito.</string>
+    <string name="buscar_supermercados">BUSCAR SUPERMERCADOS</string>
+    <string name="carrito_title">Carrito</string>
+    <string name="price_example">$500.0</string>
+    <string name="vaciar">Vaciar</string>
+    <string-array name="criterias">
+        <item>Mayor precio</item>
+        <item>Menor precio</item>
+        <item>Alfabético</item>
+    </string-array>
+</resources>

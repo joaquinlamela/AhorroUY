@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_product_discount"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="3dp"
+    tools:layout_editor_absoluteX="36dp"
+    tools:layout_editor_absoluteY="36dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_product"
+        android:layout_width="180dp"
+        android:layout_height="280dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/border_discount_product">
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="45sp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/open_sans"
+            android:includeFontPadding="true"
+            android:padding="0dp"
+            android:text="@string/Plus"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#9e9e9e"
+            app:layout_constrainedHeight="false"
+            app:layout_constraintBottom_toTopOf="@+id/btn_addCart"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/product_image"
+            android:foregroundGravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_grain_sack" />
+
+        <ToggleButton
+            android:id="@+id/btn_favorite"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/button_favorite"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_productName"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/product_name"
+            android:textColor="#5f6062"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_product" />
+
+        <TextView
+            android:id="@+id/txt_market"
+            android:layout_width="180dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="42dp"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/market"
+            android:textColor="#5f6062"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_product" />
+
+        <TextView
+            android:id="@+id/txt_productPrice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/price1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_minus"
+            app:layout_constraintEnd_toEndOf="@+id/btn_minus"
+            app:layout_constraintStart_toStartOf="@+id/btn_minus" />
+
+        <TextView
+            android:id="@+id/txt_productPrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/price2"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btn_plus"
+            app:layout_constraintEnd_toEndOf="@+id/btn_plus"
+            app:layout_constraintStart_toStartOf="@+id/btn_plus" />
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="45sp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/open_sans"
+            android:padding="0dp"
+            android:text="@string/Minus"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#9e9e9e"
+            app:layout_constraintBottom_toTopOf="@+id/btn_addCart"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_amountItemFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/unidades"
+            android:textSize="9sp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_amount"
+            app:layout_constraintEnd_toEndOf="@+id/txt_amount"
+            app:layout_constraintStart_toStartOf="@+id/txt_amount"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/txt_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/amount"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_addCart"
+            app:layout_constraintEnd_toStartOf="@+id/btn_plus"
+            app:layout_constraintStart_toEndOf="@+id/btn_minus" />
+
+        <Button
+            android:id="@+id/btn_addCart"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_border_background"
+            android:text="@string/addToCart"
+            android:textSize="12sp"
+            app:backgroundTint="#d32007"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/img_discount"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/discunt_image"
+        app:srcCompat="@mipmap/icon_discount_foreground"
+        tools:layout_editor_absoluteX="-18dp"
+        tools:layout_editor_absoluteY="-20dp" />
+
+    <TextView
+        android:id="@+id/txt_discount"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:text="@string/percentageDiscount"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</RelativeLayout>

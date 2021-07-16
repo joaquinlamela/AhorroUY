@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ahorrouy.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/home_to_search_product"
+            app:destination="@id/search_product">
+            <argument android:name="searchText" />
+            <argument android:name="barcode" />
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.ahorrouy.ui.cart.CartFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/nav_coupons"
+        android:name="com.ahorrouy.ui.coupons.CouponsFragment"
+        android:label="@string/menu_coupons"
+        tools:layout="@layout/fragment_coupons" />
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.ahorrouy.ui.favorites.FavoritesFragment"
+        android:label="@string/menu_favorites"
+        tools:layout="@layout/fragment_favorites" />
+
+
+    <fragment
+        android:id="@+id/nav_signup"
+        android:name="com.ahorrouy.ui.user.UserFragment"
+        android:label="@string/menu_signup"
+        tools:layout="@layout/fragment_user">
+        <argument
+            android:name="index"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.ahorrouy.ui.user.UserFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_user">
+        <argument
+            android:name="index"
+            android:defaultValue="1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/search_product"
+        android:name="com.ahorrouy.ui.search.SearchProductFragment"
+        android:label="SearchProductFragment">
+        <argument
+            android:name="searchText"
+            app:argType="string" />
+        <argument
+            android:name="barcode"
+            app:argType="string" />
+        <argument
+            android:name="category"
+            app:argType="com.ahorrouy.api.model.category.CategoryResponse" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.ahorrouy.ui.marketMap.MarketMapFragment"
+        android:label="MapFragment">
+        <argument
+            android:name="ProductsToBuy"
+            app:argType="com.ahorrouy.ui.marketMap.model.ProductSearchModel[]" />
+        <action
+            android:id="@+id/nav_map_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+
+</navigation>

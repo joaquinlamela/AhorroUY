@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicException\BusinessLogicException.csproj" />
+    <ProjectReference Include="..\BusinessLogicForPushNotification.Interface\BusinessLogicForPushNotification.Interface.csproj" />
+    <ProjectReference Include="..\BusinessLogicInterface\BusinessLogic.Interface.csproj" />
+    <ProjectReference Include="..\DataAccessInterface\DataAccessInterface.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\EntitiesForPushNotification\EntitiesForPushNotification.csproj" />
+    <ProjectReference Include="..\RepositoryException\RepositoryException.csproj" />
+  </ItemGroup>
+
+</Project>
